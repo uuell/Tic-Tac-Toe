@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tic tac toe</title>
+  </head>
+  <body>
+    <main>
+      <div id="info">
+        <div class="info-items">
+          <div id="small-cross" class="cross"></div>
+          <div id="small-circle" class="circle"></div>
+        </div>
+        <div id="players-turn" class="info-items">
+          <div id="small-cross" class="cross"></div>
+          <p>Turn</p>
+        </div>
+        <div class="info-items">
+          <button id="reset-button">
+            <i class="fa-solid fa-arrow-rotate-right fa-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="game-board" class="">
+        <div id="0" class="button">
+          <div></div>
+        </div>
+        <div id="1" class="button">
+          <div></div>
+        </div>
+        <div id="2" class="button">
+          <div></div>
+        </div>
+        <div id="3" class="button">
+          <div></div>
+        </div>
+        <div id="4" class="button">
+          <div></div>
+        </div>
+        <div id="5" class="button">
+          <div></div>
+        </div>
+        <div id="6" class="button">
+          <div></div>
+        </div>
+        <div id="7" class="button">
+          <div></div>
+        </div>
+        <div id="8" class="button">
+          <div></div>
+        </div>
+      </div>
+
+      <div id="score">
+        <div id="X" class="score-items">
+          <p id="x-score">x (cross) <span id="x-current-score">0</span></p>
+        </div>
+        <div id="ties" class="score-items">
+          <p id="ties-score">Ties <span id="ties-current-score">0</span></p>
+        </div>
+        <div id="Y" class="score-items">
+          <p id="o-score">O (circle)<span id="o-current-score">0</span></p>
+        </div>
+      </div>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p id="modal-header">YOU WON!</p>
+        <div class="modal-items items-container">
+          <div id="winner"></div>
+          <p id="round-winner">TAKES THE ROUND</p>
+        </div>
+        <div class="items-container">
+          <button id="quit-btn">QUIT</button>
+          <button id="next-round-btn">NEXT ROUND</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
